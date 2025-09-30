@@ -5,6 +5,9 @@ import VideoSection from '@/components/VideoSection';
 import ConvivenciaSection from '@/components/ConvivenciaSection';
 import AcademiaSection from '@/components/AcademiaSection';
 import AcademiaMelhorSection from '@/components/AcademiaMelhorSection';
+import CasaUmSection from '@/components/CasaUmSection';
+import CasaDoisSection from '@/components/CasaDoisSection';
+import CasaTresSection from '@/components/CasaTresSection';
 import AboutSection from '@/components/AboutSection';
 import ImageCarousel from '@/components/ImageCarousel';
 import FinancingSection from '@/components/FinancingSection';
@@ -20,8 +23,9 @@ const Index = () => {
       <VideoSection />
       <AboutSection />
       <ConvivenciaSection />
-      <AcademiaSection />
-      <AcademiaMelhorSection />
+      <CasaUmSection />
+      <CasaDoisSection />
+      <CasaTresSection />
       <FinancingSection />
       <ImageCarousel />
       <CompanySection />
