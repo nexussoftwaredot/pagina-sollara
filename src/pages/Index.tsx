@@ -2,8 +2,6 @@
 import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import VideoSection from '@/components/VideoSection';
-import LeisureSection from '@/components/LeisureSection';
-import ConvivenciaSection from '@/components/ConvivenciaSection';
 import AboutSection from '@/components/AboutSection';
 import ImageCarousel from '@/components/ImageCarousel';
 import FinancingSection from '@/components/FinancingSection';
@@ -17,8 +15,6 @@ const Index = () => {
       <ScrollIndicator />
       <HeroSection />
       <VideoSection />
-      <LeisureSection />
-      <ConvivenciaSection />
       <AboutSection />
       <FinancingSection />
       <ImageCarousel />
