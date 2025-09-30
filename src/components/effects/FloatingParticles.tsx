@@ -78,11 +78,13 @@ const FloatingParticles = () => {
         if (particle.y < 0) particle.y = canvas.height;
         if (particle.y > canvas.height) particle.y = 0;
 
-        // Draw particle
+        // Draw particle with rich gold color
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(212, 175, 55, ${particle.opacity})`;
+        ctx.globalAlpha = particle.opacity;
+        ctx.fillStyle = '#D4AF37';
         ctx.fill();
+        ctx.globalAlpha = 1;
       });
 
       animationRef.current = requestAnimationFrame(animate);

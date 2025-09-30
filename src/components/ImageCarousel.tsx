@@ -31,22 +31,22 @@ const ImageCarousel = () => {
   if (!carouselImages || carouselImages.length === 0) return null;
 
   return (
-    <section className="py-16 bg-luxury-cream">
+    <section className="py-16 bg-book-cream">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="section-title text-luxury-brown">
+            <h2 className="section-title text-book-text">
               GALERIA SOLLARA GARDEN
             </h2>
-            <div className="w-32 h-1 bg-luxury-gold mx-auto mb-8"></div>
-            <p className="section-subtitle text-luxury-brown-light">
+            <div className="w-32 h-1 bg-book-stone mx-auto mb-8"></div>
+            <p className="section-subtitle text-book-text">
               Conheça os ambientes e diferenciais do empreendimento
             </p>
           </div>
 
           <div className="relative">
             {/* Main carousel container */}
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-luxury-beige">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-book-cream border border-book-stone/30">
               <div className="aspect-video relative">
                 {carouselImages.map((image, index) => (
                   <div
@@ -57,8 +57,8 @@ const ImageCarousel = () => {
                   >
                     {/* Lazy loading skeleton */}
                     {!loadedImages.has(index) && (
-                      <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
-                        <div className="w-16 h-16 border-4 border-luxury-gold border-t-transparent rounded-full animate-spin"></div>
+                      <div className="absolute inset-0 bg-book-cream animate-pulse flex items-center justify-center">
+                        <div className="w-16 h-16 border-4 border-book-stone border-t-transparent rounded-full animate-spin"></div>
                       </div>
                     )}
                     <img
@@ -72,8 +72,8 @@ const ImageCarousel = () => {
                     />
                     
                     {/* Image overlay with title - melhorado para mobile */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 text-white">
+                    <div className="absolute inset-0 bg-gradient-to-t from-book-stone/60 via-transparent to-transparent" />
+                    <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 text-book-cream">
                       <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-1 md:mb-2 drop-shadow-lg">
                         {image.title}
                       </h3>
@@ -113,8 +113,8 @@ const ImageCarousel = () => {
                   onClick={() => goToSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-200 ${
                     index === currentIndex
-                      ? 'bg-luxury-gold scale-125'
-                      : 'bg-luxury-gold/40 hover:bg-luxury-gold/60'
+                      ? 'bg-book-stone scale-125'
+                      : 'bg-book-stone/40 hover:bg-book-stone/60'
                   }`}
                   aria-label={`Ir para imagem ${index + 1}`}
                 />

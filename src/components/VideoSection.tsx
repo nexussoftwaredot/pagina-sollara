@@ -68,12 +68,14 @@ const VideoSection = () => {
   if (!heroVideoUrl) return null;
 
   return (
-    <section id="video-section" ref={sectionRef} className="py-16 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
+    <section id="video-section" ref={sectionRef} className="py-16 relative overflow-hidden bg-book-cream">
+      {/* Match hero header background with soft gradient to book-stone */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-book-cream via-book-cream/70 to-book-stone" />
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Video container sem cabeçalho duplicado */}
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative bg-book-stone rounded-2xl overflow-hidden shadow-xl">
               <div className="aspect-video relative">
                 {heroVideoType === 'youtube' ? (
                   <div className="relative w-full h-full">
