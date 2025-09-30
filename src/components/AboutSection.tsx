@@ -206,11 +206,6 @@ const AboutSection = () => {
                 alt="GS Grupo Salha"
                 className="h-28 md:h-32 w-auto opacity-80"
                 loading="lazy"
-              <img
-                src="/lovable-uploads/gs-grupo-salha.png"
-                alt="GS Grupo Salha"
-                className="h-28 md:h-32 w-auto opacity-80"
-                loading="lazy"
                 onError={(e) => {
                   const img = e.currentTarget as HTMLImageElement;
                   if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
