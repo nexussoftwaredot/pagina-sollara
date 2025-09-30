@@ -3,6 +3,8 @@ import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import VideoSection from '@/components/VideoSection';
 import ConvivenciaSection from '@/components/ConvivenciaSection';
+import AcademiaSection from '@/components/AcademiaSection';
+import AcademiaMelhorSection from '@/components/AcademiaMelhorSection';
 import AboutSection from '@/components/AboutSection';
 import ImageCarousel from '@/components/ImageCarousel';
 import FinancingSection from '@/components/FinancingSection';
@@ -18,6 +20,8 @@ const Index = () => {
       <VideoSection />
       <AboutSection />
       <ConvivenciaSection />
+      <AcademiaSection />
+      <AcademiaMelhorSection />
       <FinancingSection />
       <ImageCarousel />
       <CompanySection />
