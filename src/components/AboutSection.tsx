@@ -17,7 +17,7 @@ const AboutSection = () => {
           <div className="max-w-4xl mx-auto animate-fade-in mb-16">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
               <div className="space-y-8 text-lg text-luxury-brown leading-relaxed">
-                
+
                 {/* Casas de 1, 2 e 3 Quartos */}
                 <div>
                   <h3 className="font-sf-pro text-2xl font-bold text-luxury-brown mb-4">
@@ -31,22 +31,11 @@ const AboutSection = () => {
                     Quintal Privativo 30m²
                   </h3>
                 </div>
-                   <div>
-                  <h3 className="font-sf-pro text-2xl font-bold text-luxury-brown mb-4">
-                    Condomínio Fechado
-                  </h3>
-                </div>
-                </div>
-                   <div>
-                  <h3 className="font-sf-pro text-2xl font-bold text-luxury-brown mb-4">
-                    Casas de 1, 2 e 3 Quartos
-                  </h3>
-                </div>
 
-                {/* Quintal Privativo */}
+                {/* Condomínio Fechado */}
                 <div>
                   <h3 className="font-sf-pro text-2xl font-bold text-luxury-brown mb-4">
-                    Quintal Privativo 30m²
+                    Condomínio Fechado
                   </h3>
                 </div>
 
