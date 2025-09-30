@@ -95,6 +95,49 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Bloco "O LOCAL" conforme anexo */}
+      <div className="mt-20 container mx-auto px-4 md:px-8">
+        <div className="mb-10">
+          <h2 className="text-book-text text-4xl md:text-5xl font-extrabold tracking-tight">O LOCAL</h2>
+          <p className="mt-6 text-book-text text-xl md:text-2xl font-bold tracking-wide">
+            300 METROS DA RODOVIA PRESIDENTE DUTRA.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-12 gap-8 items-end">
+          <div className="col-span-12 lg:col-span-9">
+            <div className="rounded-2xl bg-book-text p-8 md:p-12 shadow-modern">
+              <p className="text-book-cream text-xl md:text-2xl leading-relaxed">
+                Com uma excelente localização, em meio a natureza, o condomínio <span className="font-semibold">SOLLARA GARDEN</span> fica a 300m da via Dutra, no bairro nova esperança.
+              </p>
+              <div className="mt-6 h-1 w-56 bg-book-stone/80 rounded-full ml-auto"></div>
+            </div>
+          </div>
+
+          <div className="hidden lg:block lg:col-span-3 relative min-h-[220px]">
+            <div className="h-1 w-40 bg-book-stone rounded-full absolute top-6 right-0" />
+            <div className="h-24 w-full bg-book-stone/60 rounded absolute bottom-20 right-0" />
+            <div className="absolute bottom-0 right-0 w-full rounded-2xl bg-book-stone p-6 shadow-modern flex items-center justify-center">
+              <img
+                src="/lovable-uploads/gs-grupo-salha.png"
+                alt="GS Grupo Salha"
+                className="h-14 w-auto opacity-80"
+                loading="lazy"
+                onError={(e) => {
+                  const img = e.currentTarget as HTMLImageElement;
+                  if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
+                    img.onerror = null;
+                    img.src = '/gs-grupo-salha.png';
+                  } else {
+                    img.style.display = 'none';
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
