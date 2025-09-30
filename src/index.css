@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern design system for Sollara Garden */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" 32;
+    cursor: auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Modern Typography System */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sf-pro;
+    font-feature-settings: "ss01", "cv01", "cv03";
+  }
+
+  /* Golden text shadow effects */
+  .text-shadow-golden {
+    text-shadow: 
+      0 0 10px rgba(212, 175, 55, 0.8),
+      0 0 20px rgba(212, 175, 55, 0.6),
+      0 0 40px rgba(212, 175, 55, 0.4),
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Modern premium styles */
+  .luxury-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  }
+
+  .luxury-red-gradient {
+    background: linear-gradient(135deg, #8B1538 0%, #6B1028 100%);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+  }
+
+  .modern-glass {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .modern-card {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Subtle hover effects only */
+  .hover-subtle:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Simple fade animation */
+  .fade-in {
+    animation: simple-fade 0.6s ease-out forwards;
+  }
+
+  @keyframes simple-fade {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Golden pulse animation */
+  @keyframes golden-pulse {
+    0%, 100% {
+      text-shadow: 
+        0 0 10px rgba(212, 175, 55, 0.8),
+        0 0 20px rgba(212, 175, 55, 0.6),
+        0 0 40px rgba(212, 175, 55, 0.4);
+    }
+    50% {
+      text-shadow: 
+        0 0 15px rgba(212, 175, 55, 1),
+        0 0 30px rgba(212, 175, 55, 0.8),
+        0 0 60px rgba(212, 175, 55, 0.6);
+    }
+  }
+
+  .animate-golden-pulse {
+    animation: golden-pulse 3s ease-in-out infinite;
+  }
+}
+
+@layer components {
+  .btn-modern {
+    @apply bg-luxury-gold hover:bg-luxury-gold-dark text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg;
+  }
+
+  .btn-modern-red {
+    @apply bg-luxury-red hover:bg-luxury-red-dark text-white font-medium py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg;
+  }
+
+  .section-title {
+    @apply font-sf-pro text-3xl md:text-4xl font-bold text-luxury-brown mb-6 tracking-tight;
+  }
+
+  .section-title-modern {
+    @apply font-sf-pro text-3xl md:text-4xl font-semibold text-gray-900 mb-6 tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-luxury-brown-light mb-8 font-inter font-normal leading-relaxed;
+  }
+
+  .section-subtitle-modern {
+    @apply text-lg text-gray-600 mb-8 font-inter font-normal leading-relaxed;
+  }
+
+  .card-modern {
+    @apply modern-card rounded-2xl p-6 hover-subtle;
+  }
+
+  .glass-modern {
+    @apply modern-glass rounded-2xl p-6;
+  }
+
+  /* Innovative Hero Styles */
+  .innovative-hero-content {
+    animation: heroFadeIn 1.2s ease-out forwards;
+  }
+
+  .logo-container {
+    animation: logoFloat 3s ease-in-out infinite;
+  }
+
+  .title-section {
+    animation: titleSlideUp 1s ease-out 0.3s backwards;
+  }
+
+  .cta-section {
+    animation: ctaScale 0.8s ease-out 0.6s backwards;
+  }
+
+  .info-cards {
+    animation: cardsSlideUp 1s ease-out 0.9s backwards;
+  }
+
+  .info-card {
+    transition: all 0.3s ease;
+  }
+
+  .info-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(212, 175, 55, 0.5);
+  }
+
+  @keyframes heroFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes logoFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes titleSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes ctaScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes cardsSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Geometric animations */
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+}

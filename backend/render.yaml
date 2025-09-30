@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sollara-garden-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 10000
+      - key: MAX_FILE_SIZE
+        value: 5242880
+      - key: FRONTEND_URL
+        value: https://sollara-garden.netlify.app
