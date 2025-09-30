@@ -48,6 +48,15 @@ const AboutSection = () => {
         alt="GS Grupo Salha"
         className="absolute right-6 bottom-6 h-14 md:h-16 w-auto opacity-80"
         loading="lazy"
+        onError={(e) => {
+          const img = e.currentTarget as HTMLImageElement;
+          if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
+            img.onerror = null;
+            img.src = '/gs-grupo-salha.png';
+          } else {
+            img.style.display = 'none';
+          }
+        }}
       />
     </section>
   );
