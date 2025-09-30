@@ -81,7 +81,7 @@ const HeroSection = () => {
             {/* CTA Button in brand palette */}
             <button
               onClick={scrollToVideoSection}
-              className="relative overflow-hidden bg-book-stone hover:bg-book-stone/90 text-book-cream font-bold py-4 px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-book-stone/40"
+              className="relative overflow-hidden bg-[#591e1c] hover:bg-[#591e1c]/90 text-book-cream font-bold py-4 px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-[#591e1c]/40"
             >
               <span className="relative z-10">APRESENTAÇÃO EXCLUSIVA</span>
             </button>

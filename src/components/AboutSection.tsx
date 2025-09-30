@@ -37,7 +37,14 @@ const AboutSection = () => {
           {/* Área direita com barras minimalistas (decor) */}
           <div className="lg:col-span-4 flex flex-col gap-10 items-end pt-4">
             <div className="h-1 w-40 bg-book-stone rounded-full"></div>
-            <div className="h-64 w-full bg-book-stone/60 rounded shadow-modern"></div>
+            <div className="h-64 w-full bg-book-stone/60 rounded shadow-modern p-6 flex flex-col justify-between items-end">
+              <div className="text-right leading-tight">
+                <p className="text-[color:#eeeae5] text-3xl font-extrabold">Seu lar</p>
+                <p className="text-[color:#eeeae5] text-3xl font-extrabold">Seu espaço</p>
+                <p className="text-[color:#eeeae5] text-3xl font-extrabold">Seu Lugar</p>
+              </div>
+              <p className="text-right text-[color:#591e1c] font-semibold tracking-wider">EM BARRA MANSA</p>
+            </div>
           </div>
         </div>
       </div>
@@ -58,6 +65,36 @@ const AboutSection = () => {
           }
         }}
       />
+      {/* Seção abaixo com página do anexo (imagem enquadrada) */}
+      <div className="mt-16 container mx-auto px-4 md:px-8">
+        <div className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
+          <img
+            src="/lovable-uploads/230d7ba0-f969-4982-91ec-6ad5f202cdcd.png"
+            alt="Sollara Garden - Portaria"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+          {/* Barra e assinatura no rodapé da imagem */}
+          <div className="absolute right-6 bottom-6 flex flex-col items-end gap-3">
+            <div className="h-1 w-56 bg-book-stone/80 rounded-full"></div>
+            <img
+              src="/lovable-uploads/gs-grupo-salha.png"
+              alt="GS Grupo Salha"
+              className="h-12 md:h-14 w-auto opacity-80"
+              loading="lazy"
+              onError={(e) => {
+                const img = e.currentTarget as HTMLImageElement;
+                if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
+                  img.onerror = null;
+                  img.src = '/gs-grupo-salha.png';
+                } else {
+                  img.style.display = 'none';
+                }
+              }}
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
