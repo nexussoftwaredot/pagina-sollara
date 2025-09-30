@@ -138,6 +138,87 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Seção: Imagem ampla com GS no canto inferior direito (1ª do novo par) */}
+      <div className="mt-20 container mx-auto px-4 md:px-8">
+        <div className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
+          <img
+            src="/lovable-uploads/617c932f-d57d-47d8-b749-99ddfe60c989.png"
+            alt="Sollara Garden - Vista Geral"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+          {/* Decorações à direita */}
+          <div className="hidden md:block absolute top-6 right-6 h-28 w-56 bg-book-text/80 rounded" />
+          <div className="hidden md:block absolute top-40 right-6 h-1 w-40 bg-book-stone rounded-full" />
+          {/* Bloco GS no rodapé */}
+          <div className="absolute bottom-0 right-0 w-64 md:w-80 bg-book-text p-6 rounded-tl-2xl shadow-modern">
+            <div className="flex flex-col items-end gap-3">
+              <img
+                src="/lovable-uploads/gs-grupo-salha.png"
+                alt="GS Grupo Salha"
+                className="h-10 md:h-12 w-auto opacity-80"
+                loading="lazy"
+                onError={(e) => {
+                  const img = e.currentTarget as HTMLImageElement;
+                  if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
+                    img.onerror = null;
+                    img.src = '/gs-grupo-salha.png';
+                  } else {
+                    img.style.display = 'none';
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Seção: SOLLARA GARDEN texto em faixa escura (2ª do novo par) */}
+      <div className="mt-20 container mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* Faixa escura com conteúdo */}
+          <div className="lg:col-span-8">
+            <div className="rounded-2xl bg-book-text p-8 md:p-12 shadow-modern border border-book-stone/30">
+              <h2 className="text-book-cream text-5xl font-extrabold mb-10 tracking-tight">SOLLARA GARDEN</h2>
+              <div className="space-y-6 text-book-cream text-xl leading-relaxed">
+                <p>
+                  É o mais novo projeto do <span className="font-semibold">GS EMPREENDIMENTOS</span>.
+                </p>
+                <p>
+                  Planejado em uma região de excelente localização de Barra Mansa, o <span className="font-semibold">SOLLARA GARDEN</span> é um condomínio residencial privado de casas não geminadas que apresenta em sua essência: Modernidade, conforto e bem-estar.
+                </p>
+                <p>
+                  Definitivamente um novo marco para a cidade de Barra Mansa, uma estrutura diferenciada de moradia ao espaço urbano.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Coluna direita com elementos minimalistas e GS */}
+          <div className="lg:col-span-4 relative min-h-[280px]">
+            <div className="h-40 w-64 bg-book-text/80 rounded absolute top-6 right-0" />
+            <div className="h-1 w-40 bg-book-stone rounded-full absolute top-48 right-0" />
+            <div className="h-36 w-56 bg-book-stone/70 rounded absolute bottom-24 right-0" />
+            <div className="absolute bottom-0 right-0 w-64 bg-book-stone p-5 rounded-tl-2xl shadow-modern flex items-center justify-center">
+              <img
+                src="/lovable-uploads/gs-grupo-salha.png"
+                alt="GS Grupo Salha"
+                className="h-10 md:h-12 w-auto opacity-80"
+                loading="lazy"
+                onError={(e) => {
+                  const img = e.currentTarget as HTMLImageElement;
+                  if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
+                    img.onerror = null;
+                    img.src = '/gs-grupo-salha.png';
+                  } else {
+                    img.style.display = 'none';
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
