@@ -71,7 +71,7 @@ const AboutSection = () => {
       <div className="mt-16 container mx-auto px-4 md:px-8">
         <div className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
           <img
-            src="/lovable-uploads/230d7ba0-f969-4982-91ec-6ad5f202cdcd.png"
+            src="/lovable-uploads/portaria.jpg"
             alt="Sollara Garden - Portaria"
             className="w-full h-auto object-cover"
             loading="lazy"
