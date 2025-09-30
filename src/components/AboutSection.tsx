@@ -48,57 +48,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Blocos adicionais conforme ordem dos anexos */}
-        {[
-          { title: 'CONVIVÊNCIA', img: '/lovable-uploads/617c932f-d57d-47d8-b749-99ddfe60c989.png', text: 'Descubra uma área de lazer completa em um condomínio privado: Piscina, quadras para beach tennis e esportes diversos, salão de festas integrado com playground, academia equipada – tudo planejado para oferecer diversão, descanso e bem-estar todos os dias.' },
-          { title: 'INTERIOR', img: '/lovable-uploads/230d7ba0-f969-4982-91ec-6ad5f202cdcd.png', text: 'Pensar no futuro é também imaginar cada detalhe do lugar onde você vai viver os melhores momentos da sua vida.' },
-          { title: 'ÁREA 38,25 m2', img: '/lovable-uploads/3e057a4c-5472-43d1-9559-aed684c23b2b.png' },
-          { title: 'MÁXIMO EM CONFORTO E COMODIDADE', img: '/lovable-uploads/ef880c3a-6fab-4c98-8178-ef3430ef5ea9.png' },
-          { title: 'ÁREA 65,70 m2', img: '/lovable-uploads/40772c9a-33d3-43d2-bc8a-b4cd636f28ae.png' },
-          { title: 'INSTITUCIONAL', img: '/lovable-uploads/7e70fce2-fd47-4b88-937f-99b337b7e622.png' },
-          { title: 'ÁREA 81,00 m2', img: '/lovable-uploads/d912767b-33c2-4fda-bc3a-e1a7d4c736f8.png' },
-          { title: 'CASAS DE 3 QUARTOS', img: '/lovable-uploads/51ca6b6b-95b1-4314-bad6-7305c41b418e.png' },
-          { title: 'CASAS DE 2 QUARTOS', img: '/lovable-uploads/ab0c69b5-1548-40f5-9283-148fe297f7f6.png' },
-          { title: 'ACADEMIA COMPLETA', img: '/lovable-uploads/e56958fd-6361-49ff-85dc-d56fe92fb9fb.png' },
-          { title: 'QUADRAS', img: '/lovable-uploads/6f379a2e-244d-4691-8766-fc92f3f7e0ad.png' },
-          { title: 'INTERIORES', img: '/lovable-uploads/01ff5adb-8b94-4939-9f7e-69e308a4e950.png' },
-          { title: 'SEU RESORT PARTICULAR', img: '/lovable-uploads/d67a1c57-1d4c-4edd-8dc6-4e624a75f761.png' },
-          { title: 'ÁREA DE LAZER COMPLETA', img: '/lovable-uploads/de85cc7c-baa4-4c09-a3f4-be28b3ded2d2.png' },
-          { title: 'SALÃO DE FESTAS / PLAYGROUND', img: '/lovable-uploads/daec1aa2-95fd-4d7d-ad79-83d3e641f7f2.png' },
-        ].map((b, i) => (
-          <div key={`attach-${i}`} className="mt-20">
-            <div className="container mx-auto px-4 md:px-8">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div className="lg:col-span-8">
-                  <div className="rounded-2xl bg-book-text p-8 md:p-12 shadow-modern border border-book-stone/30">
-                    <h2 className="text-book-cream text-4xl md:text-5xl font-extrabold tracking-tight mb-6">{b.title}</h2>
-                    {b.text && <p className="text-book-cream/90 text-lg leading-relaxed">{b.text}</p>}
-                  </div>
-                </div>
-                <div className="lg:col-span-4">
-                  <div className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
-                    <img src={b.img} alt={b.title} className="w-full h-auto object-cover" loading="lazy" />
-                    <img
-                      src="/lovable-uploads/gs-grupo-salha.png"
-                      alt="GS Grupo Salha"
-                      className="absolute right-4 bottom-4 h-10 w-auto opacity-80"
-                      loading="lazy"
-                      onError={(e) => {
-                        const img = e.currentTarget as HTMLImageElement;
-                        if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
-                          img.onerror = null;
-                          img.src = '/gs-grupo-salha.png';
-                        } else {
-                          img.style.display = 'none';
-                        }
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+        {/* Seções anexas removidas a pedido; mantendo apenas os blocos anteriores */}
       </div>
 
       {/* Logotipo GS no canto inferior direito da seção */}
