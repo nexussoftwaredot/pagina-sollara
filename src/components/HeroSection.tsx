@@ -45,26 +45,13 @@ const HeroSection = () => {
   return (
     <section 
       ref={heroRef}
-      className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+      className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden bg-book-cream"
     >
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <video
-          ref={videoRef}
-          className="w-full h-full object-cover opacity-80"
-          autoPlay
-          muted
-          loop
-          playsInline
-          onLoadedData={() => setIsVideoLoaded(true)}
-          onError={() => console.log('Error loading video')}
-        >
-          <source src="https://drive.google.com/uc?export=download&id=14jFcXML2KS1bawZ2P9V2_j7uoHNHrayp" type="video/mp4" />
-        </video>
-        
-        {/* Overlay with gradients */}
-        <div className="absolute inset-0 bg-gradient-to-br from-luxury-red/30 via-black/50 to-luxury-gold/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
+        {/* Minimal, luxurious dual background using brand palette */}
+        <div className="absolute inset-0 bg-book-cream" />
+        <div className="absolute inset-0 bg-gradient-to-b from-book-cream via-book-cream/70 to-book-stone" />
       </div>
 
       <FloatingParticles />
@@ -83,18 +70,18 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Title with golden gradient - aligned as phrase */}
+          {/* Title with brand colors, minimal and luxurious */}
           <div className="space-y-4">
             <div className="relative">
-              <h1 className="font-sf-pro text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
+              <h1 className="font-sf-pro text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-book-text">
                 CONFORTO, MODERNIDADE, SEGURANÇA E LAZER COMPLETO AO SEU ALCANCE
               </h1>
             </div>
             
-            {/* CTA Button with golden theme */}
+            {/* CTA Button in brand palette */}
             <button
               onClick={scrollToVideoSection}
-              className="relative overflow-hidden bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-black font-bold py-4 px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-yellow-500/50"
+              className="relative overflow-hidden bg-book-stone hover:bg-book-stone/90 text-book-cream font-bold py-4 px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-book-stone/40"
             >
               <span className="relative z-10">APRESENTAÇÃO EXCLUSIVA</span>
             </button>

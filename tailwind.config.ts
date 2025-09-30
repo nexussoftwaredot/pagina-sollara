@@ -67,6 +67,13 @@ export default {
 					'red-dark': '#6B1028',
 					'red-accent': '#B8002B'
 				}
+				,
+				book: {
+					cream: '#eeeae5',
+					stone: '#aaa39d',
+					text: '#6b6361',
+					'text-light': '#eeeae5'
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
