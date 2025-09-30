@@ -43,11 +43,7 @@ const FinancingSection = () => {
               {/* CTA WhatsApp */}
               <div className="mt-6">
                 <a
-<<<<<<< HEAD
                   href="https://wa.me/5524999385575"
-=======
-                  href="https://wa.me/552499938-5575"
->>>>>>> 3e9785ea52cbab0b36aa65124b9a0417571a78f0
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 relative overflow-hidden bg-[#25D366] hover:bg-[#1ebe5a] text-white font-bold py-3 px-6 rounded-2xl text-base md:text-lg transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-[#25D366]/50"
