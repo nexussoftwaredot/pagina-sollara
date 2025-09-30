@@ -13,6 +13,17 @@ const CasaTresSection = () => {
               loading="lazy"
               onError={(e) => {
                 const img = e.currentTarget as HTMLImageElement;
+                const current = img.src;
+                if (current.endsWith('.png')) {
+                  img.onerror = null;
+                  img.src = current.replace('.png', '.jpg');
+                  return;
+                }
+                if (current.endsWith('.jpg') || current.endsWith('.jpeg')) {
+                  img.onerror = null;
+                  img.src = current.replace(/\.jpe?g$/, '.png');
+                  return;
+                }
                 img.onerror = null;
                 img.src = '/lovable-uploads/318e54c2-e94e-4b91-a4ed-5f6aeade3dbb.png';
               }}

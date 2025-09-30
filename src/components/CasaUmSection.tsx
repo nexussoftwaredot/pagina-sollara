@@ -4,7 +4,7 @@ const CasaUmSection = () => {
   return (
     <section className="relative py-16 bg-book-cream overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 space-y-10">
-        {["/lovable-uploads/pagina1-casa.png", "/lovable-uploads/pagina2-casa.png"].map((src) => (
+        {["/lovable-uploads/pagina1-casa.png", "/lovable-uploads/pagina2-casa.jpg"].map((src) => (
           <div key={src} className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
             <img
               src={src}
@@ -13,6 +13,17 @@ const CasaUmSection = () => {
               loading="lazy"
               onError={(e) => {
                 const img = e.currentTarget as HTMLImageElement;
+                const current = img.src;
+                if (current.endsWith('.png')) {
+                  img.onerror = null;
+                  img.src = current.replace('.png', '.jpg');
+                  return;
+                }
+                if (current.endsWith('.jpg') || current.endsWith('.jpeg')) {
+                  img.onerror = null;
+                  img.src = current.replace(/\.jpe?g$/, '.png');
+                  return;
+                }
                 img.onerror = null;
                 img.src = '/lovable-uploads/318e54c2-e94e-4b91-a4ed-5f6aeade3dbb.png';
               }}
