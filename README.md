@@ -215,4 +215,4 @@ Se encontrar algum problema:
 
 ---
 
-**Desenvolvido para Sollara Garden Barra Mansa** 🏡
+**Desenvolvido para Sollara Garden Barra Mansa, por Jonathan Dantas Nunes** 🏡
