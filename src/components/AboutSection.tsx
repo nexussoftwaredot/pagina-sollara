@@ -168,7 +168,7 @@ const AboutSection = () => {
           {/* Decoração superior direita removida conforme solicitação */}
           <div className="hidden md:block absolute top-40 right-6 h-1 w-40 bg-book-stone rounded-full" />
           {/* Bloco GS no rodapé */}
-          <div className="absolute bottom-0 right-0 w-20 md:w-24 bg-book-text p-6 rounded-tl-2xl shadow-modern">
+          <div className="absolute bottom-0 right-0 w-32 md:w-28 bg-book-text p-6 rounded-tl-2xl shadow-modern">
             <div className="flex flex-col items-end gap-3">
               <img
                 src="/lovable-uploads/gs-grupo-salha.png"
