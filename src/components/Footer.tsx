@@ -30,12 +30,12 @@ const Footer = () => {
               <p className="text-white/80 text-xs">
                 Desenvolvido por{' '}
                 <a 
-                  href="https://wa.me/5524992010616" 
+                  href="https://www.instagram.com/nexussoftware___" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:opacity-80 transition-colors duration-200"
                 >
-                  Nexus Hub Software
+                  Nexus Hub Software 
                 </a>
               </p>
             </div>
