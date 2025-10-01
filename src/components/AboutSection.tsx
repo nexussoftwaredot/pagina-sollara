@@ -160,7 +160,7 @@ const AboutSection = () => {
       <div className="mt-20 container mx-auto px-4 md:px-8">
         <div className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
           <img
-            src="/lovable-uploads/condominio.jpg"
+            src="/lovable-uploads/rua.jpg"
             alt="Sollara Garden - Vista Geral"
             className="w-full h-auto object-cover"
             loading="lazy"
