@@ -1,0 +1,37 @@
+
+import React from 'react';
+import HeroSection from '@/components/HeroSection';
+import VideoSection from '@/components/VideoSection';
+import ConvivenciaSection from '@/components/ConvivenciaSection';
+import AcademiaSection from '@/components/AcademiaSection';
+import AcademiaMelhorSection from '@/components/AcademiaMelhorSection';
+import CasaUmSection from '@/components/CasaUmSection';
+import CasaDoisSection from '@/components/CasaDoisSection';
+import CasaTresSection from '@/components/CasaTresSection';
+import AboutSection from '@/components/AboutSection';
+import ImageCarousel from '@/components/ImageCarousel';
+import FinancingSection from '@/components/FinancingSection';
+import CompanySection from '@/components/CompanySection';
+import Footer from '@/components/Footer';
+import ScrollIndicator from '@/components/effects/ScrollIndicator';
+
+const Index = () => {
+  return (
+    <div className="min-h-screen">
+      <ScrollIndicator />
+      <HeroSection />
+      <VideoSection />
+      <AboutSection />
+      <ConvivenciaSection />
+      <CasaUmSection />
+      <CasaDoisSection />
+      <CasaTresSection />
+      <FinancingSection />
+      <ImageCarousel />
+      <CompanySection />
+      <Footer />
+    </div>
+  );
+};
+
+export default Index;
