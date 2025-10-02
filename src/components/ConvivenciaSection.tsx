@@ -4,7 +4,7 @@ const ConvivenciaSection = () => {
   return (
     <section className="relative py-16 bg-book-cream overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-book-text text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-10">RESORT PARTICULAR</h2>
+        <h2 className="text-book-text text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-10">Resort Particular</h2>
 
         <div className="relative rounded-2xl overflow-hidden shadow-modern-lg border border-book-stone/40 bg-book-cream">
           <img
