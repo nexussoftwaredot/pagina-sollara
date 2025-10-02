@@ -31,17 +31,17 @@ const FooterParticles = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Initialize particles - menos partículas e mais lentas para efeito esmaecido
+    // Initialize particles - mais partículas e mais visíveis
     const initParticles = () => {
       particlesRef.current = [];
-      for (let i = 0; i < 30; i++) { // Menos partículas
+      for (let i = 0; i < 50; i++) { // Mais partículas
         particlesRef.current.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          size: Math.random() * 2 + 0.5, // Partículas menores
-          speedX: (Math.random() - 0.5) * 0.3, // Movimento mais lento
-          speedY: (Math.random() - 0.5) * 0.3, // Movimento mais lento
-          opacity: Math.random() * 0.3 + 0.1, // Opacidade reduzida para efeito esmaecido
+          size: Math.random() * 2.5 + 1, // Partículas maiores
+          speedX: (Math.random() - 0.5) * 0.4, // Movimento um pouco mais rápido
+          speedY: (Math.random() - 0.5) * 0.4, // Movimento um pouco mais rápido
+          opacity: Math.random() * 0.5 + 0.3, // Opacidade aumentada para maior visibilidade
         });
       }
     };
@@ -83,11 +83,11 @@ const FooterParticles = () => {
         if (particle.y < 0) particle.y = canvas.height;
         if (particle.y > canvas.height) particle.y = 0;
 
-        // Draw particle com cor mais suave
+        // Draw particle com cor dourada mais intensa
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.globalAlpha = particle.opacity; // Opacidade reduzida
-        ctx.fillStyle = '#D4AF37'; // Dourado mais claro para efeito esmaecido
+        ctx.globalAlpha = particle.opacity * 1.5; // Aumentando a opacidade para maior visibilidade
+        ctx.fillStyle = '#FFD700'; // Dourado mais intenso e brilhante
         ctx.fill();
         ctx.globalAlpha = 1;
       });
@@ -109,7 +109,7 @@ const FooterParticles = () => {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 pointer-events-none z-10"
-      style={{ mixBlendMode: 'screen', opacity: 0.6 }} // Opacidade reduzida para efeito esmaecido
+      style={{ mixBlendMode: 'screen', opacity: 1 }} // Opacidade aumentada para maior visibilidade
     />
   );
 };
