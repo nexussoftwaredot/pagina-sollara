@@ -100,18 +100,11 @@ export const defaultCarouselImages: CarouselImage[] = [
     description: 'Projetos inovadores para garantir o máximo conforto',
   },
   {
-    id: '19',
-    url: '/lovable-uploads/03-2.png',
-    alt: 'Sala ampla e inovadora para conforto e satisfação',
-    title: 'Projetos Pensados para Você',
-    description: 'Sala ampla, inovadora para proporcionar conforto e satisfação',
-  },
-  {
     id: '20',
     url: '/lovable-uploads/03-3.png',
     alt: 'Cozinha compacta e moderna para suas refeições',
     title: 'Cozinha Moderna',
-    description: 'Compacta e moderna para suas refeições',
+    description: 'Compacta e moderna',
   },
 ];
 
