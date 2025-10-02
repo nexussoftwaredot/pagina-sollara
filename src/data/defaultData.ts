@@ -79,27 +79,6 @@ export const defaultCarouselImages: CarouselImage[] = [
     description: 'Equipamentos de alta performance para seu bem-estar',
   },
   {
-    id: '12',
-    url: '/lovable-uploads/exclusiva-pcd2.png',
-    alt: 'Interior da casa exclusiva para PCD com sala de estar moderna',
-    title: 'Casa Acessível',
-    description: 'Ambiente planejado com acessibilidade e conforto',
-  },
-  {
-    id: '13',
-    url: '/lovable-uploads/exclusiva-pcd.png',
-    alt: 'Quarto da casa exclusiva para PCD com design funcional',
-    title: 'Quarto Adaptado',
-    description: 'Espaço acolhedor com total acessibilidade',
-  },
-  {
-    id: '14',
-    url: '/lovable-uploads/01-1.png',
-    alt: 'Cozinha da casa exclusiva para PCD com design moderno',
-    title: 'Cozinha Acessível',
-    description: 'Praticidade e design inclusivo em cada detalhe',
-  },
-  {
     id: '15',
     url: '/lovable-uploads/exclusiva-pcd3.png',
     alt: 'Sala de estar da casa de 2 quartos com design contemporâneo',
