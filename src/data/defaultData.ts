@@ -34,7 +34,7 @@ export const defaultCarouselImages: CarouselImage[] = [
     url: '/lovable-uploads/6f379a2e-244d-4691-8766-fc92f3f7e0ad.png',
     alt: 'Casas modernas com design contemporâneo e garagem',
     title: 'Residências Modernas',
-    description: 'Casas com garagem e acabamento premium',
+    description: 'Casas com acabamento premium',
   },
   {
     id: '6',
