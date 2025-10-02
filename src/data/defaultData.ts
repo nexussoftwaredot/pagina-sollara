@@ -64,6 +64,55 @@ export const defaultCarouselImages: CarouselImage[] = [
     alt: 'Playground infantil com brinquedos modernos e seguros',
     title: 'Playground Infantil',
     description: 'Espaço seguro e divertido para as crianças'
+  },
+  {
+    id: '10',
+    url: '/lovable-uploads/academia1.png',
+    alt: 'Academia completa com equipamentos modernos e vista panorâmica',
+    title: 'Academia Completa',
+    description: 'Treine com conforto e vista privilegiada da cidade'
+  },
+  {
+    id: '11',
+    url: '/lovable-uploads/academia2.png',
+    alt: 'Academia equipada com aparelhos de última geração',
+    title: 'Academia Equipada',
+    description: 'Equipamentos de alta performance para seu bem-estar'
+  },
+  {
+    id: '12',
+    url: '/lovable-uploads/exclusiva-pcd.png',
+    alt: 'Interior da casa exclusiva para PCD com sala de estar moderna',
+    title: 'Casa Acessível',
+    description: 'Ambiente planejado com acessibilidade e conforto'
+  },
+  {
+    id: '13',
+    url: '/lovable-uploads/exclusiva-pcd2.png',
+    alt: 'Quarto da casa exclusiva para PCD com design funcional',
+    title: 'Quarto Adaptado',
+    description: 'Espaço acolhedor com total acessibilidade'
+  },
+  {
+    id: '14',
+    url: '/lovable-uploads/exclusiva-pcd3.png',
+    alt: 'Cozinha da casa exclusiva para PCD com design moderno',
+    title: 'Cozinha Acessível',
+    description: 'Praticidade e design inclusivo em cada detalhe'
+  },
+  {
+    id: '15',
+    url: '/lovable-uploads/01-1.png',
+    alt: 'Sala de estar da casa de 2 quartos com design contemporâneo',
+    title: 'Sala Ampla',
+    description: 'Espaço integrado para momentos em família'
+  },
+  {
+    id: '16',
+    url: '/lovable-uploads/01-2.png',
+    alt: 'Quarto principal da casa de 2 quartos com acabamento premium',
+    title: 'Quarto Sofisticado',
+    description: 'Conforto e elegância para seu descanso'
   }
 ];
 

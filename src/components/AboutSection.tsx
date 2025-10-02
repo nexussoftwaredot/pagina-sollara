@@ -167,26 +167,7 @@ const AboutSection = () => {
           />
           {/* Decoração superior direita removida conforme solicitação */}
           <div className="hidden md:block absolute top-40 right-6 h-1 w-40 bg-book-stone rounded-full" />
-          {/* Bloco GS no rodapé */}
-          <div className="absolute bottom-0 right-0 w-70 md:w-38 bg-book-text p-6 rounded-tl-2xl shadow-modern">
-            <div className="flex flex-col items-end gap-3">
-              <img
-                src="/lovable-uploads/gs-grupo-salha.png"
-                alt="GS Grupo Salha"
-                className="h-28 md:h-32 w-auto opacity-80"
-                loading="lazy"
-                onError={(e) => {
-                  const img = e.currentTarget as HTMLImageElement;
-                  if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
-                    img.onerror = null;
-                    img.src = '/gs-grupo-salha.png';
-                  } else {
-                    img.style.display = 'none';
-                  }
-                }}
-              />
-            </div>
-          </div>
+          {/* Bloco removido conforme solicitação */}
         </div>
       </div>
 
@@ -215,23 +196,8 @@ const AboutSection = () => {
             <div className="h-40 w-64 bg-book-text/80 rounded absolute top-6 right-0" />
             <div className="h-1 w-40 bg-book-stone rounded-full absolute top-48 right-0" />
             <div className="h-36 w-56 bg-book-stone/70 rounded absolute bottom-24 right-0" />
-            <div className="absolute bottom-0 right-0 w-64 bg-[#6b6361] p-5 rounded-tl-2xl shadow-modern flex items-center justify-center">
-              <img
-                src="/lovable-uploads/gs-grupo-salha.png"
-                alt="GS Grupo Salha"
-                className="h-28 md:h-32 w-auto opacity-80"
-                loading="lazy"
-                onError={(e) => {
-                  const img = e.currentTarget as HTMLImageElement;
-                  if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
-                    img.onerror = null;
-                    img.src = '/gs-grupo-salha.png';
-                  } else {
-                    img.style.display = 'none';
-                  }
-                }}
-              />
-            </div>
+            {/* Logotipo removida conforme solicitado */}
+            {/* Quadro redimensionado conforme solicitação */}
           </div>
         </div>
       </div>

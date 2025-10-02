@@ -19,24 +19,9 @@ const AcademiaSection = () => {
             }}
           />
 
-          {/* Faixa inferior estilo padrão do site */}
-          <div className="absolute left-0 right-0 bottom-0 bg-[#6b6361]/95 text-white px-6 md:px-10 py-6 flex items-center justify-between gap-4">
+          {/* Faixa inferior estilo padrão do site - reduzida para melhor visualização da imagem */}
+          <div className="absolute left-0 right-0 bottom-0 bg-[#6b6361]/95 text-white px-6 md:px-10 py-4 flex items-center justify-center">
             <div className="text-sm md:text-base opacity-80">imagens ilustrativas – sugestões de decoração.</div>
-            <img
-              src="/lovable-uploads/gs-grupo-salha.png"
-              alt="GS Grupo Salha"
-              className="h-12 md:h-16 w-auto opacity-90"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget as HTMLImageElement;
-                if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
-                  img.onerror = null;
-                  img.src = '/gs-grupo-salha.png';
-                } else {
-                  img.style.display = 'none';
-                }
-              }}
-            />
           </div>
         </div>
       </div>

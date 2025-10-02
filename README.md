@@ -215,4 +215,8 @@ Se encontrar algum problema:
 
 ---
 
+<<<<<<< HEAD
 **Desenvolvido para Sollara Garden Barra Mansa** 🏡
+=======
+**Desenvolvido para Sollara Garden Barra Mansa** 🏡
+>>>>>>> 8447769 (commit-carrossel)

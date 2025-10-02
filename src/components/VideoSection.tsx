@@ -68,20 +68,20 @@ const VideoSection = () => {
   if (!heroVideoUrl) return null;
 
   return (
-    <section id="video-section" ref={sectionRef} className="py-16 relative overflow-hidden bg-book-cream">
+    <section id="video-section" ref={sectionRef} className="py-10 sm:py-12 md:py-16 relative overflow-hidden bg-book-cream">
       {/* Match hero header background with soft gradient to book-stone */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-book-cream via-book-cream/70 to-book-stone" />
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Video container sem cabeçalho duplicado */}
           <div className="relative">
-            <div className="relative bg-book-stone rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative bg-book-stone rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl">
               <div className="aspect-video relative">
                 {heroVideoType === 'youtube' ? (
                   <div className="relative w-full h-full">
                     <iframe
                       src={getYouTubeEmbedUrl(heroVideoUrl)}
-                      className="w-full h-full rounded-2xl"
+                      className="w-full h-full rounded-xl sm:rounded-2xl"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                       frameBorder="0"

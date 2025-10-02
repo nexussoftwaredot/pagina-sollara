@@ -31,15 +31,15 @@ const ImageCarousel = () => {
   if (!carouselImages || carouselImages.length === 0) return null;
 
   return (
-    <section className="py-16 bg-book-cream">
+    <section className="py-8 sm:py-12 md:py-16 bg-book-cream">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="section-title text-book-text">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-book-text">
               GALERIA SOLLARA GARDEN
             </h2>
-            <div className="w-32 h-1 bg-book-stone mx-auto mb-8"></div>
-            <p className="section-subtitle text-book-text">
+            <div className="w-24 sm:w-32 h-1 bg-book-stone mx-auto mb-4 sm:mb-6 md:mb-8"></div>
+            <p className="text-base sm:text-lg md:text-xl text-book-text">
               Conheça os ambientes e diferenciais do empreendimento
             </p>
           </div>
@@ -90,28 +90,28 @@ const ImageCarousel = () => {
               {/* Navigation arrows - melhorados para mobile */}
               <button
                 onClick={prevSlide}
-                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md rounded-full p-2 md:p-3 text-white hover:bg-white/40 transition-all duration-200 shadow-lg"
+                className="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md rounded-full p-1.5 sm:p-2 md:p-3 text-white hover:bg-white/40 transition-all duration-200 shadow-lg"
                 aria-label="Imagem anterior"
               >
-                <ChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
+                <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
               </button>
               
               <button
                 onClick={nextSlide}
-                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md rounded-full p-2 md:p-3 text-white hover:bg-white/40 transition-all duration-200 shadow-lg"
+                className="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md rounded-full p-1.5 sm:p-2 md:p-3 text-white hover:bg-white/40 transition-all duration-200 shadow-lg"
                 aria-label="Próxima imagem"
               >
-                <ChevronRight className="w-4 h-4 md:w-6 md:h-6" />
+                <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
               </button>
             </div>
 
             {/* Dots indicator */}
-            <div className="flex justify-center space-x-3 mt-8">
+            <div className="flex justify-center space-x-2 sm:space-x-3 mt-4 sm:mt-6 md:mt-8">
               {carouselImages.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${
                     index === currentIndex
                       ? 'bg-book-stone scale-125'
                       : 'bg-book-stone/40 hover:bg-book-stone/60'

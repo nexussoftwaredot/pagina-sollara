@@ -78,11 +78,11 @@ const FloatingParticles = () => {
         if (particle.y < 0) particle.y = canvas.height;
         if (particle.y > canvas.height) particle.y = 0;
 
-        // Draw particle with rich gold color
+        // Draw particle with dark gold color para melhor visibilidade
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.globalAlpha = particle.opacity;
-        ctx.fillStyle = '#D4AF37';
+        ctx.globalAlpha = particle.opacity * 1.5; // Aumentando a opacidade para melhor visibilidade
+        ctx.fillStyle = '#B8941F'; // Dourado mais escuro conforme solicitado
         ctx.fill();
         ctx.globalAlpha = 1;
       });

@@ -59,32 +59,34 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 text-center px-4 md:px-8 max-w-6xl mx-auto">
         <div className="space-y-8 md:space-y-12">
-          {/* Logo - Significantly increased size for mobile */}
-          <div className="mb-6 md:mb-8">
+          {/* Logo - Optimized for all screen sizes */}
+          <div className="mb-4 md:mb-6">
             <div className="relative inline-block">
               <img 
                 src="/lovable-uploads/c67509dc-b8fd-4b63-a711-7737584ea409.png" 
                 alt="Sollara Garden Logo"
-                className="mx-auto h-96 sm:h-[28rem] md:h-[32rem] lg:h-[36rem] w-auto drop-shadow-2xl"
+                className="mx-auto h-72 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem] w-auto drop-shadow-2xl"
               />
             </div>
           </div>
 
           {/* Title with brand colors, minimal and luxurious */}
-          <div className="space-y-4">
+          <div className="space-y-4 px-4 sm:px-6 md:px-8">
             <div className="relative">
-              <h1 className="font-sf-pro text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-book-text">
+              <h1 className="font-sf-pro text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight text-book-text text-center">
                 CONFORTO, MODERNIDADE, SEGURANÇA E LAZER COMPLETO AO SEU ALCANCE
               </h1>
             </div>
             
             {/* CTA Button in brand palette */}
-            <button
-              onClick={scrollToVideoSection}
-              className="relative overflow-hidden bg-[#591e1c] hover:bg-[#591e1c]/90 text-book-cream font-bold py-4 px-8 rounded-2xl text-lg md:text-xl transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-[#591e1c]/40"
-            >
-              <span className="relative z-10">APRESENTAÇÃO EXCLUSIVA</span>
-            </button>
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={scrollToVideoSection}
+                className="relative overflow-hidden bg-[#591e1c] hover:bg-[#591e1c]/90 text-book-cream font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-2xl text-base sm:text-lg md:text-xl transition-all duration-300 hover:shadow-lg transform hover:scale-105 border-2 border-[#591e1c]/40"
+              >
+                <span className="relative z-10">APRESENTAÇÃO EXCLUSIVA</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
