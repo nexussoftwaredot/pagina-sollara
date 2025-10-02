@@ -90,14 +90,14 @@ export const defaultCarouselImages: CarouselImage[] = [
     url: '/lovable-uploads/banheiro.png',
     alt: 'Banheiro Moderno e Amplo',
     title: 'Banheiro Moderno',
-    description: 'Sala ampla e sofisticada',
+    description: 'Espaço amplo e sofisticado',
   },
   {
     id: '18',
     url: '/lovable-uploads/sala1-g.png',
     alt: 'Sala Ampla e Moderna para seu Conforto',
-    title: 'Sala Ampla e Moderna',
-    description: 'Design moderno e inovador com máximo conforto',
+    title: 'Sala Ampla e Acolhedora',
+    description: 'Projetos inovadores para garantir o máximo conforto',
   },
   {
     id: '19',
