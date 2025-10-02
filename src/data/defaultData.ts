@@ -13,7 +13,7 @@ export const defaultCarouselImages: CarouselImage[] = [
     url: '/lovable-uploads/daec1aa2-95fd-4ad7-ad79-83d3e641f7f2.png',
     alt: 'Fachadas modernas das casas do Sollara Garden',
     title: 'Fachadas Modernas',
-    description: 'Design contemporâneo e elegante',
+    description: 'Design moderno e elegante',
   },
   {
     id: '3',
