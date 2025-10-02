@@ -69,7 +69,7 @@ export const defaultCarouselImages: CarouselImage[] = [
     url: '/lovable-uploads/academia1.png',
     alt: 'Academia completa com equipamentos modernos e vista panorâmica',
     title: 'Academia Completa',
-    description: 'Treine com conforto e vista privilegiada da cidade',
+    description: 'Treine com conforto e vista privilegiada',
   },
   {
     id: '11',
