@@ -120,23 +120,7 @@ const AboutSection = () => {
           <div className="hidden lg:block lg:col-span-3 relative min-h-[220px]">
             <div className="h-1 w-40 bg-book-stone rounded-full absolute top-6 right-0" />
             <div className="h-24 w-full bg-book-stone/60 rounded absolute bottom-20 right-0" />
-            <div className="absolute bottom-0 right-0 w-full rounded-2xl bg-[#6b6361] p-6 shadow-modern flex items-center justify-center">
-              <img
-                src="/lovable-uploads/gs-grupo-salha.png"
-                alt="GS Grupo Salha"
-                className="h-28 md:h-32 w-auto opacity-80"
-                loading="lazy"
-                onError={(e) => {
-                  const img = e.currentTarget as HTMLImageElement;
-                  if (img.src.endsWith('/lovable-uploads/gs-grupo-salha.png')) {
-                    img.onerror = null;
-                    img.src = '/gs-grupo-salha.png';
-                  } else {
-                    img.style.display = 'none';
-                  }
-                }}
-              />
-            </div>
+            {/* Logotipo removido conforme solicitado */}
           </div>
         </div>
 

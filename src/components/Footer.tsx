@@ -1,10 +1,15 @@
 
 import React from 'react';
+import FooterParticles from './effects/FooterParticles';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f1f1f] text-white py-12">
-      <div className="container mx-auto px-4 md:px-8">
+    <footer className="bg-[#1f1f1f] text-white py-12 relative overflow-hidden">
+      {/* Adicionando o efeito de partículas flutuantes esmaecido */}
+      <div className="absolute inset-0">
+        <FooterParticles />
+      </div>
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             {/* Logo */}

@@ -9,6 +9,7 @@ import { AdminProvider } from "@/contexts/AdminContext";
 import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
+import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
         <AdminProvider>
           <Toaster />
           <Sonner />
+          <WhatsAppFloatingButton />
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
