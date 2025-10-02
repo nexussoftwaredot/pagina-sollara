@@ -79,13 +79,6 @@ export const defaultCarouselImages: CarouselImage[] = [
     description: 'Equipamentos de alta performance para seu bem-estar',
   },
   {
-    id: '15',
-    url: '/lovable-uploads/exclusiva-pcd3.png',
-    alt: 'Sala de estar da casa de 2 quartos com design contemporâneo',
-    title: 'Sala Ampla',
-    description: 'Espaço integrado para momentos em família',
-  },
-  {
     id: '16',
     url: '/lovable-uploads/01-2.png',
     alt: 'Quarto principal da casa de 2 quartos com acabamento premium',
